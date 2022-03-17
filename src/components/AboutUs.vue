@@ -11,7 +11,7 @@
           <div
             class="text-p secondary--text font-weight-bold text-capitalize ma-2 p-content"
           >
-            <span class="text-h4 primary--text font-weight-bold p-content"
+            <span class="text-p primary--text font-weight-bold p-content"
               >Crystal Cars</span
             >
             Is The Best Place For Selling or Buying Your Used Cars

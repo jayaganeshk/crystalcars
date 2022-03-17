@@ -4,13 +4,16 @@
       v-for="(item, i) in items"
       :key="i"
       :src="item.src"
-      reverse-transition="fade-transition"
-      transition="fade-transition"
+      reverse-transition="fade"
+      transition="fade"
     >
       <!-- <v-img :src="item.src"></v-img> -->
       <v-overlay absolute class="text-center" opacity="0.7">
         <div class="text-h6 white--text">//CRYSTAL CARS//</div>
-        <div class="text-h4 white--text font-weight-bold mt-2">
+        <div
+          class="text-h4 white--text font-weight-bold mt-2"
+          :class="[isMobile ? 'carouselwidth' : '']"
+        >
           {{ item.text }}
         </div>
       </v-overlay>
@@ -35,7 +38,16 @@ export default {
       ],
     };
   },
+  computed: {
+    isMobile() {
+      return this.$vuetify.breakpoint.xs;
+    },
+  },
 };
 </script>
 
-<style></style>
+<style>
+.carouselwidth {
+  max-width: 250px;
+}
+</style>

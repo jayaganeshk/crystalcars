@@ -47,8 +47,7 @@
             <CarsCard />
           </v-col>
         </v-row>
-        <AboutUs class="mt-10" />
-        <v-divider></v-divider>
+        <AboutUs class="mt-16" />
       </div>
       <StatsTile class="mt-10" />
       <HomeFooter class="mt-10" />
