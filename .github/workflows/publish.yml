@@ -1,4 +1,4 @@
-name: CI
+name: Publish to gh-pages
 
 on:
   push:
@@ -8,8 +8,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  deploy:
-    name: Deploy to GitHub pages
+  publish:
+    name: Publish
     runs-on: ubuntu-latest
     steps:
       - name: Setup Node.js environment
@@ -26,7 +26,7 @@ jobs:
       - name: Build app for GitHub pages
         run: npm run build:gh-pages
 
-      - name: Deploy with gh-pages
+      - name: Publish build output to gh-pages branch
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
           npx gh-pages -d dist -u "github-actions-bot <support+actions@github.com>"
