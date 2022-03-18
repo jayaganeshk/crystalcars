@@ -35,18 +35,7 @@
           Featured Cars
         </div>
 
-        <v-row dense class="d-flex">
-          <v-col
-            v-for="service in services"
-            :key="service.id"
-            class="ma-auto"
-            cols="12"
-            md="4"
-            xl="4"
-          >
-            <CarsCard />
-          </v-col>
-        </v-row>
+        <CarsCard class="mt-16" />
         <AboutUs class="mt-16" />
       </div>
       <StatsTile class="mt-10" />
