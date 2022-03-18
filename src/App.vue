@@ -40,6 +40,11 @@
       </div>
       <StatsTile class="mt-10" />
       <HomeFooter class="mt-10" />
+      <v-fab-transition>
+        <v-btn color="primary" fixed bottom right fab href="tel:919840700040">
+          <v-icon>fa-phone-alt</v-icon>
+        </v-btn>
+      </v-fab-transition>
     </v-main>
   </v-app>
 </template>

@@ -54,7 +54,7 @@ export default {
   methods: {
     whatsappLink(name, model) {
       return (
-        `https://wa.me/9840700040?text=Hello, am interested in buying your car name ` +
+        `https://wa.me/919840700040?text=Hello, am interested in buying your car name ` +
         name +
         ` and  ` +
         model +
